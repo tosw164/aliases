@@ -13,7 +13,7 @@ unalias=alias /d $1
 vi=vim $*
 cmderr=cd /d "%CMDER_ROOT%"
 
-gl=git log
+gl=git log --pretty=oneline
 gll=git log --oneline --all --graph --decorate  $*
 gd=git diff $*
 gdd="git diff -- ':!package-lock.json' ':!yarn.lock'"
@@ -28,6 +28,7 @@ gch=git checkout $*
 gpl=git pull
 gps=git push $*
 gpom=git pull origin master
+gcm=git checkout master
 
 ssa=start-ssh-agent
 
